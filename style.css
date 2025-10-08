@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("https://imgcdn.stablediffusionweb.com/2024/9/12/0bcd91cd-5995-46c1-9464-da6f4f62c017.jpg") center/cover fixed;
+}
+
+.login-card {
+  width: 450px;
+  padding: 25px;
+  border-radius: 15px;
+  background: white;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.role-switch {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15px;
+}
+
+.role-switch button {
+  flex: 1;
+  padding: 10px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 20px;
+  background: #eee;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.role-switch button.active {
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+input {
+  width: 440px;
+  height: 42px;
+  margin: 8px 0;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1.5px solid #ccc;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: orange;
+  box-shadow: 0 0 5px rgba(255, 165, 0, 0.5);
+}
+
+.password-box {
+  position: relative;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.qr-text {
+  margin: 10px 0;
+  font-size: 14px;
+  color: gray;
+  cursor: pointer;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  background: orange;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background: darkorange;
+}
+
+.dashboard {
+  display: flex;
+  height: 100vh;
+  background: url("https://mars.nasa.gov/system/news_items/main_images/9695_mars20220805_PIA25771-web.jpg") center/cover fixed;
+}
+
+.sidebar {
+  width: 200px;
+  padding: 15px;
+  background: orange;
+  color: white;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  color: white;
+}
+
+.card {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
